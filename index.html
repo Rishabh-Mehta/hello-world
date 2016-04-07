@@ -1,1 +1,101 @@
-hello world
+<html>
+<head>
+  <title>
+  BVBCET |Home
+  </title>
+<h1>BVBCET</h1>
+</head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<script src=jquery-2.2.2.min.js></script>
+<script> 
+$(document).ready(function(){
+       $("#home").fadeOut();
+     $("#event").fadeOut();
+      $("#about").fadeOut();
+    $("#flip").click(function(){
+        $("#flip").fadeOut();
+        $("#home").slideDown(5000);
+
+    });
+   $("#home").click(function(){
+        $("#home").fadeOut();
+        $("#about").slideDown(5000);
+
+    });
+  $("#about").click(function(){
+        $("#about").fadeOut();
+        $("#event").slideDown(5000);
+
+    });
+    $("button").click(function(){
+        $("#home").show();
+        $("#about").show();
+        $("#event").show();
+
+    });
+
+ 
+});
+</script> 
+
+
+
+
+<nav id="primary_nav_wrap">
+<ul>
+  
+  <li><a href="#">Home</a>
+   <ul>
+      <li><a href="#cof">College</a></li>
+      <li><a href="#">Campus</a></li>
+      
+    </ul>
+  </li>
+  <li><a href="#">About</a>
+   <ul>
+      <li><a href="#cof">Faculty</a></li>
+      <li><a href="#">Placement</a></li>
+      
+    </ul>
+  </li>
+  <li><a href="#">Event</a>
+  <ul>
+      <li><a href="#cof">Event 1</a></li>
+      <li><a href="#">Event 2</a></li>
+      <li><a href="#">Event 3</a></li>
+       
+    </ul>
+  <li><a href="#">Contact Us</a></li>
+</ul>
+</nav>
+<br><br><br><br><br><br><br><br>
+<div id="home">
+<br>
+<h2>Home</h2>
+<p>
+Welcome to BVBCET<p>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br>
+<div id="about">
+<br>
+<h2>About Us</h2>
+<p> Something<p>
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+<div id="event">
+<br>
+<h2>Events</h2>
+<p>Some Event<p>
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+
+
+<button>View all</button>
+
+<div id="flip">Click to know about us</div>
+<div id="panel">Hello There</div>
+</body>
+</html>
+
+
